@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Our remotes -->
+  <remote name="github"
+          fetch="https://github.com/" />
+
+  <remote name="vanilla"
+          revision="pi"
+          fetch="https://github.com/PieVanilla/" />
+
+  <remote name="bitbucket"
+          revision="master"
+          fetch="https://bitbucket.org/" />
+
+  <!-- Build/Manifest Repos -->
+  <project path="build/make" name="android_build_make" remote="vanilla" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" remote="vanilla" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+	</project>
+  <project path="manifests" name="android_manifests" remote="vanilla" />
+
+  <!-- Device Repos -->
+
+  <!-- Framework Repos
+  <project path="frameworks/av" name="android_frameworks_av" remote="vanilla" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="vanilla" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="vanilla" />
+  <project path="frameworks/support" name="android_frameworks_support" remote="vanilla" /> -->
+	
+  <!-- Kernel Repos -->
+	
+  <!-- Package Repos
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="vanilla" />				
+  <project path="packages/apps/PhoneCommon" name="android_packages_apps_PhoneCommon" remote="vanilla" />	
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="vanilla" /> -->
+  
+  <!-- Prebuilt Repos -->
+
+  <!-- System Repos
+  <project path="system/core" name="android_system_core" remote="vanilla" />
+  <project path="system/extras" name="android_system_extras" remote="vanilla" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="vanilla" />
+  <project path="system/vold" name="android_system_vold" remote="vanilla" /> -->
+  
+  <!-- Vendor Repos
+  <project path="vendor/vanilla" name="android_vendor_vanilla" remote="vanilla" /> -->
+    
+  <!-- Extras
+  <project path="scripts" name="vanilla_scripts" remote="vanilla" />
+  <project path="changelog" name="vanilla_changelog" remote="vanilla"/> -->
+
+</manifest>
