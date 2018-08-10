@@ -45,6 +45,7 @@
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="vanilla" /> -->
   
   <!-- Prebuilt Repos -->
+  <project path="prebuilts/build-tools" name="android_prebuilts_build-tools" remote="vanilla" />
 
   <!-- System Repos
   <project path="system/core" name="android_system_core" remote="vanilla" />

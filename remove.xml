@@ -104,9 +104,8 @@
   <remove-project name="platform/packages/apps/PhoneCommon" />
   <remove-project name="platform/packages/apps/Settings" /> -->
 
-  <!-- Prebuilts
-  <remove-project name="platform/prebuilts/gcc/linux-x86/mips/mips64el-linux-android-4.9" />
-  <remove-project name="platform/prebuilts/misc" /> -->
+  <!-- Prebuilts -->
+  <remove-project name="platform/prebuilts/build-tools" />
 
   <!-- System
   <remove-project name="platform/system/core" />
