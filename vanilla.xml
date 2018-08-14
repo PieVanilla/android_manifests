@@ -29,6 +29,8 @@
 	</project>
   <project path="manifests" name="android_manifests" remote="vanilla" />
 
+  <!-- App Repos -->
+  <project path="packages/apps/MusicFX" name="android_packages_apps_MusicFX" remote="vanilla" />
   <!-- Device Repos -->
 
   <!-- Framework Repos

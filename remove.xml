@@ -96,11 +96,8 @@
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/frameworks/support" /> -->
 
-  <!-- Apps
+  <!-- Apps -->
   <remove-project name="platform/packages/apps/MusicFX" />
-  <remove-project name="platform/packages/apps/PackageInstaller" />
-  <remove-project name="platform/packages/apps/PhoneCommon" />
-  <remove-project name="platform/packages/apps/Settings" /> -->
 
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/build-tools" />
